@@ -25,7 +25,7 @@ public class UserService {
         // 1. Salva o usuário primeiro (pra ter o ID dele)
         User savedUser = userRepository.save(user);
 
-        // 2. Service criando a conta bancária automaticamente 
+        // 2. Service criando a conta bancária automaticamente
         Account account = new Account();
         account.setUser(savedUser); // Liga a conta ao usuário
         account.setBalance(BigDecimal.ZERO); // Começa zerada
