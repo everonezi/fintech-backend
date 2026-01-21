@@ -1,11 +1,11 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
-import lombok.Data; // Se tiver Lombok. Se der erro, avise.
+import lombok.Data;
 
 @Entity
 @Table(name = "tb_user")
-@Data // Gera Getters, Setters e toString automaticamente
+@Data
 public class User {
 
     @Id
